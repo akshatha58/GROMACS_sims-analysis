@@ -7,12 +7,10 @@ simulation_system=$2
 precision=$3
 pdb=$4
 
-
 # Running simulations 
 
 if [ "$3" == "Double" ]
 then
-    echo "Double"
     chmod +x Run_Gromacs_doubleprecision.sh
     for i in {1..16}
     do
@@ -21,7 +19,6 @@ then
 
 elif [ "$3" == "Single" ]
 then 
-    echo "Single"
     chmod +x Run_Gromacs_singleprecision.sh
     for i in {1..16}
     do
