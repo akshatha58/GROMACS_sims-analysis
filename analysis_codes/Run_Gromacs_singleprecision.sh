@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ./Run_Gromacs_singleprecision.sh <GROMACS Path> <simulation directory> <Step number> <PDB ID>
+
 GROMACS=$1
 sim_directory=$2
 pdb=$4
@@ -31,14 +33,14 @@ then
 	#  $GROMACS dump -s em.tpr > em_tpr.txt
 elif [ "$3" == "7" ]
 then
-	 taskset -c 1-128 $GROMACS mdrun -v -deffnm em -nt 125
+	 $GROMACS mdrun -v -deffnm em 
 elif [ "$3" == "8" ]
 then
 	 $GROMACS grompp -f nvt.mdp -c em.gro -r em.gro -p topol.top -o nvt.tpr 
 	#  $GROMACS dump -s nvt.tpr > nvt_tpr.txt
 elif [ "$3" == "9" ]
 then
-	 taskset -c 1-128 $GROMACS mdrun -v -deffnm nvt -nt 125
+	 $GROMACS mdrun -v -deffnm nvt
 elif [ "$3" == "10" ]
 then
 	 printf "16 0" | $GROMACS energy -f nvt.edr -o temperature.xvg
@@ -48,7 +50,7 @@ then
 	#  $GROMACS dump -s npt.tpr > npt_tpr.txt
 elif [ "$3" == "12" ]
 then
-	 taskset -c 1-128 $GROMACS mdrun -v -deffnm npt -nt 125
+	 $GROMACS mdrun -v -deffnm npt 
 elif [ "$3" == "13" ]
 then
 	 printf "18 0" | $GROMACS energy -f npt.edr -o pressure.xvg
@@ -60,8 +62,8 @@ then
 	 $GROMACS grompp -f md.mdp -c npt.gro -t npt.cpt -p topol.top -o md.tpr
 elif [ "$3" == "16" ]
 then
-	 taskset -c 1-128 $GROMACS mdrun -v -deffnm md -nt 125
+	 $GROMACS mdrun -v -deffnm md
 elif [ "$3" == "17" ]
 then
-	 taskset -c 1-128 $GROMACS mdrun -v -s md.tpr -cpi md.cpt -deffnm md -append -nt 125
+	 $GROMACS mdrun -v -s md.tpr -cpi md.cpt -deffnm md -append 
 fi
