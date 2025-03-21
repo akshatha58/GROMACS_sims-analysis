@@ -2,9 +2,6 @@
 summary_plots.py
 10 January 2025
 
-Inputs: simulation time
-        modify simulation file paths, simulation times and legends in get_pdb_list
-
 Main functions:
 plot_energies: Plots kinetic, potential and total energies across simulation time
 plot_thermo: Plots thermodynamic properties for all systems across simulation time (temperature, density, pressure, energies)
@@ -17,6 +14,8 @@ plot_all_transitions: Draws all RMSDs for each simulation in the same plot
 plot_all_distances: Plots all important pairwise distances with time for each simulation
 
 mainplotcode: main code for executing the above functions
+
+python3 summary_plots.py <simtime> <flag to specify smoothening of data> <results file name> <simulation file path list>
 
 """
 
