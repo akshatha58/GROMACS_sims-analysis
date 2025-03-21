@@ -1,14 +1,11 @@
 # main.sh
-
-# simulation_systems=('/home/dynamics/akshatha/Calligo/previous_simfiles/1xda_sp_merged_chain' '/home/dynamics/akshatha/Calligo/previous_simfiles/1xda_dp_merged_chain' '/home/dynamics/akshatha/Calligo/Calligo_sp' '/home/dynamics/akshatha/Calligo/Calligo_dp_merged' '/home/dynamics/akshatha/Calligo/gromacs_sp' '/home/dynamics/akshatha/Calligo/gromacs_dp')
-
 # Inputs: change all inputs in this file
-maindir=dummy_files
+maindir=trial_files
 results=plots_trial
-simulation_systems=('/home/dynamics/akshatha/Calligo/dummy_files/gromacs_sp_trial' '/home/dynamics/akshatha/Calligo/dummy_files/gromacs_sp_trial2')
+simulation_systems=('../trial_files/gromacs_sp_trial' '../trial_files/gromacs_sp_trial2')
 precision=('Single' 'Single')
-simtime=1
-smooth=1
+simtime=1 
+smooth=1 
 pdb=1xda
 
 mkdir ../$maindir
