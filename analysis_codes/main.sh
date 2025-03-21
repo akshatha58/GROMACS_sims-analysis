@@ -1,6 +1,6 @@
 # ./main.sh > code_outputs.txt
-
 # Inputs: change all inputs in this file
+
 maindir=trial_files
 results=plots_trial
 simulation_systems=('../trial_files/gromacs_sp_trial' '../trial_files/gromacs_sp_trial2')
@@ -9,10 +9,10 @@ simtime=1
 smooth=1 
 pdb=1xda
 
+# Main code starts here
 mkdir ../$maindir
 basedir=$(pwd)
 resultsdir=../$maindir/$results
-
 
 # Codeblock 1: Running simulations, processing trajectories, and obtaining data from simulations
 for i in {0..1}; do
