@@ -2,6 +2,8 @@
 # 16 February 2025
 
 # Truncates trajectories to 1 ns. Gets .gro, .trr, .xtc files for longer trajectories for analysis
+# ./truncate_trajs.sh <simulation directory> <simtime> <GROMACS filepath>
+
 dir=$1
 simtime=$2
 GROMACS=$3
