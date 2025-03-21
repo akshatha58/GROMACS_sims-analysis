@@ -5,7 +5,6 @@ Code to automate GROMACS simulations, trajectory processing and analysis of cert
 
 ```bash
 ├── GROMACS_sims-analysis
-│   ├── analysis_codes                         > (all simulation/processing/analysis codes)
 │   ├── Base_Files                             > (.pdb and .mdp input files) 
 │   ├── user_inputs                            > (user inputs for analysis_codes)
 │   ├── Simulation directories
@@ -15,7 +14,8 @@ Code to automate GROMACS simulations, trajectory processing and analysis of cert
 │   │   ├── plots_trial                        > .png images for general plots
 │   │   │   ├── distances                      > .png files for distance measures
 │   │   │   ├── smooth                         > .png files: smoothened plots
-│___│___│___├── terminal_RMSDs                 > .png files: terminal RMSD information
+│   │___│___├── terminal_RMSDs                 > .png files: terminal RMSD information
+│___├── analysis_codes                         > (all simulation/processing/analysis codes)
 ```
 
 ## Main run code: 
