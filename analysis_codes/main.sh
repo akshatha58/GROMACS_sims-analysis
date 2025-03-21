@@ -1,4 +1,5 @@
-# main.sh
+# ./main.sh > code_outputs.txt
+
 # Inputs: change all inputs in this file
 maindir=trial_files
 results=plots_trial
