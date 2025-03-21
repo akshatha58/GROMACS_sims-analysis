@@ -1,8 +1,6 @@
 # process_trajs.sh
-# 10 January 2025
+# ./process_trajs.sh <simulation directory> <simulation time> <GROMACS path>
 
-# Processes trajectories to include the first 1ns of simulation time, 
-# center the protein in the simulation box and adjust for periodic boundaries before any analysis is conducted
 
 dir=$1
 simtime=$2
