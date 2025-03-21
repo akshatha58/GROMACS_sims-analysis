@@ -12,7 +12,7 @@ pdb=$4
 if [ "$3" == "Double" ]
 then
     chmod +x Run_Gromacs_doubleprecision.sh
-    for i in {1..16}
+    for i in {0..16}
     do
     ./Run_Gromacs_doubleprecision.sh $GROMACS $simulation_system $i $pdb
     done
@@ -20,7 +20,7 @@ then
 elif [ "$3" == "Single" ]
 then 
     chmod +x Run_Gromacs_singleprecision.sh
-    for i in {1..16}
+    for i in {0..16}
     do
     ./Run_Gromacs_singleprecision.sh $GROMACS $simulation_system $i $pdb
     done     
