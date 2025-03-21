@@ -38,7 +38,7 @@ IMPORTANT NOTES:
    ./Run_Gromacs_singleprecision.sh $GROMACS $simulation_system 17 $pdb
    ```
    
-
+User inputs are as follows:
 ```
 maindir=trial_files   # "Simulation directories" mentioned in the tree above
 results=plots_trial   # "plots_trial": stores all plot information
