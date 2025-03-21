@@ -1,3 +1,6 @@
+Force field for pdb2gmx: Amberff99SB-ILDN (Number 6)
+Type 'yes' for all disulphide bond creations. 
+
 The code is automated assuming the following parameter numbers. 
 Recheck whether these parameter numbers remain the same in the simulations you conduct.
 
