@@ -1,8 +1,6 @@
 # automate_sims.sh
-# 11 February 2025
 
-# Directory names:
-# gromacs_dp, gromacs_sp, calligo_dp, calligo_sp (all simulations are for merged chains from now on)
+# ./automate_sims.sh <GROMACS path> <simulation directory> <precision> <PDB ID>
 
 GROMACS=$1
 simulation_system=$2
