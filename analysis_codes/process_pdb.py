@@ -3,6 +3,8 @@ process_pdb.py
 18 February 2025
 
 Adds chain information to pdb files 
+python3 process_pdb.py <input PDB file path>
+
 """
 from Bio.PDB import PDBParser, PDBIO, Select
 import pandas as pd
