@@ -23,9 +23,21 @@ Code to automate GROMACS simulations, trajectory processing and analysis of cert
 The code sequentially runs and processes simulations for a list of simulation replicates or precisions (single or double). Can also extend it to automate runs for multiple simulation times or multiple starting structures. The analysis and plotting is then done for all simulations in the list together, to make it easier to visualise and compare.
 
 
-NOTE: 
+IMPORTANT NOTES: 
 1. Change user inputs at the beginning of ./main.sh before running (Lines 4 to 10).
-2. Also change GROMACS paths in lines 34 and 39 for single and double precision. 
+2. Also change GROMACS paths in lines 34 and 39 for single and double precision.
+3. For GROMACS user inputs (such as force field choice, disulphide linking, and index file calls), cross check parameter numbers from `user_inputs/parameter_numbers.txt`. For index file calls, crosscheck corresponding atom numbers from the `md.gro` file.
+4. If a simulation needs to be stopped and continued from a checkpoint, execute the following command:
+   ```
+   # GROMACS=gmx_file_path
+   # simulation_system=simulation_directory_path
+   # pdb=PDB_ID
+   
+   ./Run_Gromacs_doubleprecision.sh $GROMACS $simulation_system 17 $pdb
+   # OR
+   ./Run_Gromacs_singleprecision.sh $GROMACS $simulation_system 17 $pdb
+   ```
+   
 
 ```
 maindir=trial_files   # "Simulation directories" mentioned in the tree above
