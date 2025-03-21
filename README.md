@@ -45,3 +45,16 @@ Executing the code:
 ```
 ./main.sh
 ```
+
+Sequence of execution in analysis_codes:
+
+-iterate over each directory-
+a. Creation of folders according to the standard tree format above
+b. Transfer of base .pdb and .mdp files to the simulation directory
+c. Simulation runs ('automate_sims.sh')
+d. Has a script for truncating trajectories (to a lower simulation time than runtime) ('truncate_trajs.sh'): uncomment if needed 
+d. Processing of trajectories and calculations for thermodynamic/structural properties ('process_trajs.sh')
+e. Processing of cluster.pdb to add chain information for visualising in Pymol ('process_pdb.py')
+-end of iteration-
+e. Analysis data across all simulations, generation of plots ('summary_plots.py')
+
