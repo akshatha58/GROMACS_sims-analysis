@@ -1,0 +1,7 @@
+maindir=dummy_files
+results=plots_trial
+simulation_systems=('/home/dynamics/akshatha/Calligo/dummy_files/gromacs_sp_trial' '/home/dynamics/akshatha/Calligo/dummy_files/gromacs_sp_trial2')
+precision=('Single' 'Single')
+simtime=1
+smooth=1
+pdb=1xda

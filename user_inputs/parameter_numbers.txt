@@ -1,0 +1,37 @@
+The code is automated assuming the following parameter numbers. 
+Recheck whether these parameter numbers remain the same in the simulations you conduct.
+
+For gmx energy:
+
+  1  Bond             2  Angle            3  Proper-Dih.      4  Per.-Imp.-Dih.
+  5  LJ-14            6  Coulomb-14       7  LJ-(SR)          8  Disper.-corr. 
+  9  Coulomb-(SR)    10  Coul.-recip.    11  Position-Rest.  12  Potential     
+ 13  Kinetic-En.     14  Total-Energy    15  Conserved-En.   16  Temperature   
+ 17  Pres.-DC        18  Pressure        19  Constr.-rmsd    20  Vir-XX        
+ 21  Vir-XY          22  Vir-XZ          23  Vir-YX          24  Vir-YY        
+ 25  Vir-YZ          26  Vir-ZX          27  Vir-ZY          28  Vir-ZZ        
+ 29  Pres-XX         30  Pres-XY         31  Pres-XZ         32  Pres-YX       
+ 33  Pres-YY         34  Pres-YZ         35  Pres-ZX         36  Pres-ZY       
+ 37  Pres-ZZ         38  #Surf*SurfTen   39  T-Protein       40  T-non-Protein 
+ 41  Lamb-Protein                        42  Lamb-non-Protein 
+
+
+For gmx make_ndx calls:
+
+INDEX FILE CALL 1
+ CHAIN A: 17
+ CHAIN B: 18
+
+INDEX FILE CALL 2
+ 10: CHAIN B N TERMINAL
+ 11: CHAIN B C TERMINAL
+ 12: CHAIN B Rf TERMINAL
+
+INDEX FILE CALL 3
+ 10: CHAIN A N TERMINAL
+
+INDEX FILE CALL 4 (USER SHOULD INPUT THESE NUMBERS, FOLLOWED BY ctrl+D)
+ 10: N-C
+ 11: B5-B13
+ 12: B26-B12
+ 13: B28-B8

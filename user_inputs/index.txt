@@ -1,0 +1,36 @@
+# IMPORTANT NOTE: Crosscheck atom ranges for the corresponding residues in chain A and chain B to insert to index file.
+# Use the md.gro file in the simulation directory to crosscheck.
+# Type these entries one by one into the index file call.
+
+# Index file call 1: Define Chain A and Chain B residues
+# Chain A: Residue 1 - 21 (atoms 1-312)
+# Chain B: Residue 1 - 29 (atoms 313-772)
+
+a 1-312
+a 313-772 
+name 17 chainA
+name 18 chainB
+q
+
+# Index file call 2: Define N and C terminal residues (chain B)
+# N terminal of chain B, C terminal of chain B, Rf_terminal of chain B
+# Residues 1-8, Residues 24-29, Residues 1-4
+
+a 1-122 
+a 349-460 
+a 1-69
+q
+
+# Index file call 3:  N terminal of chain A
+# Residues 1-12
+
+a 1-161
+q
+
+# Index file call 4: Distances (Chain B) between C alpha atoms
+# B1 and B29 CA atoms,  B5 and B13 CA atoms,  B26 - B12 CA atoms, B28-B8 CA atoms
+
+a 5 | a 440  
+a 72 | a 188
+a 391 | a 172
+a 434 | a 118 
