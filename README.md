@@ -46,7 +46,7 @@ Executing the code:
 ./main.sh
 ```
 
-Sequence of execution in analysis_codes:
+## Sequence of execution in analysis_codes:
 
 -iterate over each directory-
 
