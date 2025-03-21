@@ -11,11 +11,11 @@ Code to automate GROMACS simulations, trajectory processing and analysis of cert
 │   ├── Simulation directories
 │   │   ├── Simulation directory <i>
 │   │   │   ├── results_<simtime>              > All results in .xvg/.dat format
-│   │   │   │   ├── clusters                   > .log and .pdb files from clustering analysis
+│   │   │___│___├── clusters                   > .log and .pdb files from clustering analysis
 │   │   ├── plots_trial                        > .png images for general plots
 │   │   │   ├── distances                      > .png files for distance measures
 │   │   │   ├── smooth                         > .png files: smoothened plots
-│   │   │   ├── terminal_RMSDs                 > .png files: terminal RMSD information
+│___│___│___├── terminal_RMSDs                 > .png files: terminal RMSD information
 ```
 
 ## Main run code: 
