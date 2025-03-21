@@ -23,8 +23,9 @@ Code to automate GROMACS simulations, trajectory processing and analysis of cert
 The code sequentially runs and processes simulations for a list of simulation replicates or precisions (single or double). Can also extend it to automate runs for multiple simulation times or multiple starting structures. The analysis and plotting is then done for all simulations in the list together, to make it easier to visualise and compare.
 
 
-NOTE: Change user inputs at the beginning of ./main.sh before running.
-      Also change GROMACS paths in lines 36 and 41 for single and double precision. 
+NOTE: 
+1. Change user inputs at the beginning of ./main.sh before running (Lines 4 to 10).
+2. Also change GROMACS paths in lines 34 and 39 for single and double precision. 
 
 ```
 maindir=trial_files   # "Simulation directories" mentioned in the tree above
