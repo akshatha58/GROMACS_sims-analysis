@@ -52,12 +52,17 @@ Sequence of execution in analysis_codes:
 
 * Creation of folders according to the standard tree format above
 * Transfer of base .pdb and .mdp files to the simulation directory
-* Simulation runs ('automate_sims.sh')
-* Has a script for truncating trajectories (to a lower simulation time than runtime) ('truncate_trajs.sh'): uncomment if needed
-* Processing of trajectories and calculations for thermodynamic/structural properties ('process_trajs.sh')
-* Processing of cluster.pdb to add chain information for visualising in Pymol ('process_pdb.py')
+* Simulation runs (`automate_sims.sh`)
+* Has a script for truncating trajectories (to a lower simulation time than runtime) (`truncate_trajs.sh`): uncomment if needed
+* Processing of trajectories and calculations for thermodynamic/structural properties (`process_trajs.sh`)
+* Processing of cluster.pdb to add chain information for visualising in Pymol (`process_pdb.py`)
 
 -end of iteration-
 
-* Analysis data across all simulations, generation of plots ('summary_plots.py')
+* Analysis data across all simulations, generation of plots (`summary_plots.py`)
+  - Plots and statistics for energies, pressure, density, temperature
+  - Plots and statistics for RMSD, RMSF, Rg for each chain
+  - Plots for secondary structure counts for each chain of insulin(with time)
+  - Plots for RMSDs of terminal regions of each chain of insulin
+  - Plots for all important pairwise CA distances that signify conformational transitions in insulin
 
