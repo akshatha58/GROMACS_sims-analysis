@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ./Run_Gromacs_doubleprecision.sh <GROMACS file path> <simulation directory> <Step number> <PDB ID>
+
 GROMACS=$1
 sim_directory=$2
 pdb=$4
