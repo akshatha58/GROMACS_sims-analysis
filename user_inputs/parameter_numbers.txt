@@ -3,6 +3,7 @@ Type 'yes' for all disulphide bond creations.
 
 The code is automated assuming the following parameter numbers. 
 Recheck whether these parameter numbers remain the same in the simulations you conduct.
+Parameter numbers usually change depending on the force field used for simulations. The following are for the Amberff99SB-ILDN force field. 
 
 For gmx energy (till nvt step):
 
